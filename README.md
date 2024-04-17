@@ -23,11 +23,12 @@ vorzugsweise in ein privates Repo da ich gern Wildwuchs verhindern möchte.
 
 Der Kurs findet an mehreren Samstagen online statt, als Plattform nutzen wir BigBlueButton von senfcall.de, der Link wird vorab per E-Mail versandt.
 
-* **Tag 1**: 20.04.2024
-* **Tag 2**: 27.04.2024
-* **Tag 3**: 04.05.2024
+* **Tag 1**: 07.05.2024
+* **Tag 2**: 09.05.2024
+* **Tag 3**: 21.05.2024
+* **Tag 4**: 23.05.2024
 
-Jeweils grundsätzlich von 10:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 15:00 Uhr, in Summe also 12 Stunden.
+Jeweils grundsätzlich von 19:00 Uhr bis 21:00 Uhr, in Summe also 12 Stunden.
 
 ## Was wird benötigt
 

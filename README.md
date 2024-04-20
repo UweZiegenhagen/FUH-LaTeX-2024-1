@@ -24,7 +24,7 @@ vorzugsweise in ein privates Repo da ich gern Wildwuchs verhindern möchte.
 Der Kurs findet an mehreren Samstagen online statt, als Plattform nutzen wir BigBlueButton von senfcall.de, der Link wird vorab per E-Mail versandt.
 
 * **Tag 1**: 07.05.2024
-* **Tag 2**: 09.05.2024
+* **Tag 2**: 09.05.2024 (Christi Himmelfahrt, verschieben wir eventuell)
 * **Tag 3**: 21.05.2024
 * **Tag 4**: 23.05.2024
 

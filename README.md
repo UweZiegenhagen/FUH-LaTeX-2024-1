@@ -19,6 +19,10 @@ In den nächsten Monaten wird das Repository noch öffentlich zugänglich sein,
 irgendwann werde ich es auf privat setzen. Ihr könnt es gern forken, aber dann
 vorzugsweise in ein privates Repo da ich gern Wildwuchs verhindern möchte.
 
+## Anmeldung
+
+Via https://cryptpad.fr/form/#/2/form/view/rkMor59InKpcxcIonC42tgs0YhmJ3feIjTRYURl8k6M/
+
 ## Der Kurs
 
 Der Kurs findet an mehreren Samstagen online statt, als Plattform nutzen wir BigBlueButton von senfcall.de, der Link wird vorab per E-Mail versandt.

@@ -32,7 +32,7 @@ Der Kurs findet an mehreren Samstagen online statt, als Plattform nutzen wir Big
 * **Tag 3**: 23.05.2024
 * **Tag 4**: 28.05.2024
 
-Jeweils grundsätzlich von 19:00 Uhr bis 21:00 Uhr, in Summe also 12 Stunden.
+Jeweils grundsätzlich von 19:00 Uhr bis 22:00 Uhr, in Summe also 12 Stunden.
 
 ## Was wird benötigt
 

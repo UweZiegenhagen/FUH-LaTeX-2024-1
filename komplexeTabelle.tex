@@ -1,0 +1,59 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[left=5mm,top=5mm,right=5mm,bottom=5mm,landscape]{geometry}
+
+\usepackage{bigdelim}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{paralist}
+\usepackage{xcolor}
+\usepackage[]{siunitx}
+\usepackage[]{multirow}
+\usepackage[]{chemformula}
+
+\begin{document}
+
+% 
+
+\begin{table}
+\begin{center}
+\caption{Flight measurement results of individual crossings for the power plant on 23 May 2018, following the nomenclature of Eq. (3).}\label{tab:measurements}
+\begin{tabular}{p{12mm}p{23mm}p{14mm}|p{23.5mm}p{25mm}p{40mm}cp{30mm}p{23mm}l} \toprule[1pt] % 
+\multicolumn{3}{c|}{Crossing} & \multicolumn{5}{c}{Measurement} \\
+\cmidrule[1pt](rl){1-9} 
+Local   & Flight track             & Distance                 &  $A$                                            & $\overline{\Delta \sigma}$       &   $q$                                    & Mean $q$                                                         & Mean $u$                                                          & Mean $\phi$   \\ 
+time    & (in \si{\kilo\meter}) & (in \si{\kilo\meter}) &   (in \si{\meter})                    & (in \si{\meter})                        &  (in \SI{1e{-27}}{\meter^2}) &  (in \si{\kilo\gram\left(\ch{CO2}\right)/\second}) & (in \si{\meter/ \second})                                     & (in °)             \\
+\cmidrule[1pt](rl){1-9} 
+10:50  & $\num{200}$          & $\num{1.46}$        & $\num{15.36} \pm \num{0.04}$    & $\num{7,27} \pm \num{0.04}$ &  $\num{760} \pm \num{60} \hspace*{4em}$ \ldelim\}{4}{*}   & \multirow{4}{*}{$\num{650} \pm \num{240}$}  & \multirow{4}{*}{$\num{5,06} \pm \num{0,36}$} &  \multirow{4}{*}{$\num{103,34} \pm \num{6,40}$}  \\
+10:57  & $\num{268}$          & $\num{4,77}$        & $\num{ 9,04} \pm \num{0.42}$    & $\num{7,47} \pm \num{0.24}$ & $\num{470} \pm \num{40}$   & &   & \\
+11:10  & $\num{388}$          & $\num{1.67}$        & $\num{19,29} \pm \num{0.46}$    & $\num{7,27} \pm \num{0.04}$ & $\num{950} \pm \num{80}$  & & &  & \\
+11:27  & $\num{536}$          & $\num{1.78}$        & $\num{ 8,45} \pm \num{1.11}$    & $\num{7,27} \pm \num{0.04}$ &  $\num{420} \pm \num{40}$  & & & &  \\ \bottomrule[1pt]\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{tabular}{p{2em}l}
+\ldelim\}{3}{*} & dvi \\
+& ps \\
+& pdf \\
+\end{tabular}
+
+
+\SI[per-mode=symbol]{123}{\meter\per\second}
+
+\SI[per-mode=fraction]{123}{\meter\per\second}
+
+
+\end{document}
+
+
+p{60mm}
+

@@ -4,6 +4,11 @@
 \usepackage{blindtext}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{xcolor}
+
+\newcommand{\person}[1]{\textcolor{blue}{\textsc{#1}}}
+
+\newcommand{\fuh}{Fernuni Hagen}
 
 \author{Uwe Ziegenhagen}
 \title{Mein erstes LaTeX-Dokument}
@@ -16,6 +21,9 @@
 
 \listoffigures
 
+\listoftables
+
+
 \chapter{Einführung}
 
 \section{Einleitung}
@@ -25,8 +33,9 @@
 
 Wie wir in Abschnitt \ref{sec:ausblick} sehen werden...
 
-Hallo Fernuni!
-Ich bin ein einfacher Text.
+\textcolor{red}{\textsc{Albert Einstein}} und \person{Niels Bohr} waren bedeutende Physiker.
+
+Hallo Fernuni! \fuh\ Ich bin ein einfacher Text.
 
 Um einen neuen Absatz zu beginnen, fügen wir einfach eine Leerzeile ein.
 
@@ -133,7 +142,7 @@ Spalte 1	&	Spalte 2	&	Spalte 3	&	Spalte 4	\\
 \caption{Hallihallo}
 \begin{center}
 \begin{tabular}{llll} \toprule[2pt]
-\textbf{Spalte 1}	&	\textbf{Spalte 2}	&	\textbf{Spalte 3}	&	\textbf{Spalte 4}	\\ \midrule[1.5pt]
+\addlinespace[0.25cm] \textbf{Spalte 1}	&	\textbf{Spalte 2}	&	\textbf{Spalte 3}	&	\textbf{Spalte 4}	\\ \midrule[1.5pt]
 0.54672	&	0.97409	&	0.58197	&	0.76644	\\
 0.72276	&	0.50369	&	0.5661	&	0.49698	\\
 0.12651	&	0.76127	&	0.17254	&	0.22598	\\
@@ -163,6 +172,62 @@ Spalte 1	&	Spalte 2	&	Spalte 3	&	Spalte 4	\\
 \end{center}
 \end{table}
 
+\textbf{fettgedruckt} % boldface
+
+\textit{kursiv} % italic
+
+\textsl{geneigt} % slanted
+
+\textbf{\textit{fettkursiv}}
+
+\textsc{Kapitälchen} % small caps
+
+
+\begin{itemize}
+\item Hallo
+\item ich
+\item bin
+\item eine Aufzählung
+\end{itemize}
+
+
+\begin{enumerate}
+\item Hallo
+\item ich
+\item bin
+\item eine Aufzählung
+\end{enumerate}
+
+\begin{description}
+\item [Äpfel] Hallo
+\item [b] ich
+\item [Birne] bin
+\item [d] eine Aufzählung
+\end{description}
+
+\begin{itemize}
+\item Hallo
+\item ich 
+
+\begin{itemize}
+\item Hallo
+\item ich
+\item bin
+
+\begin{itemize}
+\item Hallo
+\item ich
+\item bin
+\item eine Aufzählung
+\end{itemize}
+
+\item eine Aufzählung
+\end{itemize}
+
+
+\item bin
+\item eine Aufzählung
+\end{itemize}
 
 
 \end{document}

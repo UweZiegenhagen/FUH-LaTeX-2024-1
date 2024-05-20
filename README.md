@@ -60,18 +60,19 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Float-Objekte in LaTeX
 * Einfache Bilder einbetten, Bilderverzeichnisse
 * Einfacher Tabellensatz und Tabellenverzeichnisse
-* Mehr zum Bilder einbetten: ``subfigure`` und ``subcaption`` 
-* LaTeX automatisieren mit ``Arara``
-* ``nicefrac`` und ``nicematrix``
-* Einheitensatz mit ``siunitx``
 
 
 ### Tag 2 - Tabellen, Mathematik, und mehr
 
 * Wiederholung vom 1. Tag, Fragen beantworten
+* Wie ich git und github nutze
 * Schneller TeX mit Autohotkey & Co
-* Mehr zu Mathematiksatz (mit ``amsmath``)
+* LaTeX automatisieren mit ``Arara``
 * Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``, ``scrpage``
+* Mathematiksatz (mit ``amsmath``)
+* Mehr zum Bilder einbetten: ``subfigure`` und ``subcaption`` 
+* ``nicefrac`` und ``nicematrix``
+* Einheitensatz mit ``siunitx``
 * Präsentationen mit ``Beamer``
 * Briefe setzen mit ``scrlttr2``
 * Quellcode-Listings einfügen mit dem ``Listings`` Paket

@@ -1,0 +1,71 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[]{babel}
+\usepackage[]{listings}
+\usepackage[]{blindtext}
+
+
+\usepackage{xcolor}
+\definecolor{hellgelb}{rgb}{1,1,0.8}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{1,0,0}
+\definecolor{colString}{rgb}{0,0.5,0}
+
+\lstset{literate=%
+    {Ö}{{\"O}}1
+    {Ä}{{\"A}}1
+    {Ü}{{\"U}}1
+    {ß}{{\ss}}1
+    {ü}{{\"u}}1
+    {ä}{{\"a}}1
+    {ö}{{\"o}}1
+    {~}{{\textasciitilde}}1
+}
+
+\lstset{
+basicstyle=\ttfamily\small,language=Python,
+    float=hbp,%
+    identifierstyle=\color{colIdentifier}, %
+    keywordstyle=\color{colKeys}, %
+    stringstyle=\color{colString}, %
+    commentstyle=\color{colComments}, %
+    columns=flexible, %
+    tabsize=2, %
+  %  frame=single, %
+    extendedchars=true, %
+    showspaces=false, %
+    showstringspaces=false, %
+    backgroundcolor=\color{hellgelb}, %\color[gray]{0.95}
+    breakautoindent=true, %
+    captionpos=b%
+}
+
+
+
+
+\begin{document}
+
+\blindtext 
+
+\begin{lstlisting}[language=Python]
+import pandas as pd # data wrangling
+import jinja2 # template engine
+import os # for file-related stuff
+ 
+# create jinja env that can load template from filesystem
+jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader)
+ 
+df = pd.read_excel('Daten.xlsx')
+template = jinja_env.get_template('template.xml')
+ 
+with open('FertigesXML.xml','w') as output:
+    output.write(template.render(data=df))
+\end{lstlisting}
+
+
+\blindtext 
+
+\end{document}

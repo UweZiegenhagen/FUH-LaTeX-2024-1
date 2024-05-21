@@ -26,7 +26,7 @@
 }
 
 \lstset{
-basicstyle=\ttfamily\small,language=Python,
+basicstyle=\ttfamily\scriptsize,language=Python,
     float=hbp,%
     identifierstyle=\color{colIdentifier}, %
     keywordstyle=\color{colKeys}, %
@@ -40,7 +40,8 @@ basicstyle=\ttfamily\small,language=Python,
     showstringspaces=false, %
     backgroundcolor=\color{hellgelb}, %\color[gray]{0.95}
     breakautoindent=true, %
-    captionpos=b%
+    captionpos=b,%
+   morekeywords={write,get_template,render,Environment,read_excel}
 }
 
 
@@ -50,7 +51,7 @@ basicstyle=\ttfamily\small,language=Python,
 
 \blindtext 
 
-\begin{lstlisting}[language=Python]
+\begin{lstlisting}
 import pandas as pd # data wrangling
 import jinja2 # template engine
 import os # for file-related stuff
@@ -67,5 +68,7 @@ with open('FertigesXML.xml','w') as output:
 
 
 \blindtext 
+
+\lstinputlisting[caption={fsafsdfs}]{test.py}
 
 \end{document}

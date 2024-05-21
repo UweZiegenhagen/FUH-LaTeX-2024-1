@@ -1,0 +1,18 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[]{babel}
+\usepackage[]{siunitx}
+
+\begin{document}
+
+\num{123154648798,489}
+
+\num{123154648798.489}
+
+\unit{\square\volt\cubic\lumen\per\farad}
+
+\SI{42342}{\lumen\per\square\meter}
+
+\end{document}

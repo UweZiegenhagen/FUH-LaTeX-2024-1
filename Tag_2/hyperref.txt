@@ -1,10 +1,3 @@
-\documentclass[12pt,ngerman,parskip=half]{scrreport}
-
-\usepackage{babel}
-\usepackage{blindtext}
-\usepackage{microtype}
-\usepackage{graphicx}
-
 \usepackage{hyperref}
 \hypersetup{
     bookmarks=true,                     % show bookmarks bar
@@ -21,49 +14,8 @@
     pdfkeywords={keyword1, key2, key3},   % list of keywords
     pdfnewwindow=true,                  % links in new window
     colorlinks=true,                        % false: boxed links; true: colored links
-    linkcolor=blue,                          % color of internal links
-    filecolor=blue,                     % color of file links
-    citecolor=blue,                     % color of file links
-    urlcolor=blue                        % color of external links
+    linkcolor=red,                          % color of internal links
+    filecolor=cyan,                     % color of file links
+    citecolor=green,                     % color of file links
+    urlcolor=magenta                        % color of external links
 }
-
-\author{Uwe Ziegenhagen}
-\title{Bachelor-Arbeit}
-\date{Köln, den \today}
-
-
-\begin{document}
-\maketitle
-
-\tableofcontents
-
-\listoffigures
-
-\listoftables
-
-\chapter{Einleitung}
-
-\blindtext[10]
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.8\textwidth]{Bilder/Katze.jpg}
-\end{center}
-\caption{Miezekatze}\label{fig:mieze}
-\end{figure}
-
-
-\blindtext[10]
-
-
-\chapter{Analyse}
-
-\blindtext[10]
-
-\chapter{Fazit}
-
-\blindtext[10]
-
-Siehe Abbildung \ref{fig:mieze} auf Seite \pageref{fig:mieze}
-
-\end{document}

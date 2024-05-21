@@ -4,3 +4,6 @@
 *.log
 *.toc
 *.lof
+*.nav
+*.out
+*.snm

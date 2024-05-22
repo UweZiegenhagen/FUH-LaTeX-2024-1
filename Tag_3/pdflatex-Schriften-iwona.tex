@@ -1,0 +1,16 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{babel}
+\usepackage{varsfromjobname}
+\usepackage[math,toc]{blindtext}
+
+\usepackage{\getthreefromjobname}
+
+\begin{document}
+
+\Blinddocument
+
+\end{document}

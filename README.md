@@ -68,32 +68,36 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Wie ich git und github nutze
 * Schneller TeX mit Autohotkey & Co
 * LaTeX automatisieren mit ``Arara``
-* Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``, ``scrpage``
+* Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``
 * Mathematiksatz (mit ``amsmath``)
-* Mehr zum Bilder einbetten: ``subfigure`` und ``subcaption`` 
-* ``nicefrac`` und ``nicematrix``
 * Einheitensatz mit ``siunitx``
 * Präsentationen mit ``Beamer``
 * Briefe setzen mit ``scrlttr2``
 * Quellcode-Listings einfügen mit dem ``Listings`` Paket
-* Syntaxhighlighting mit pygments
 
 
 ### Tag 3 - Bibliografien und Präsentationen
 
 * Zusammenfassung vom 2. Termin, Wiederholung
-* Einfache Bibliografien -- die ``thebibliography`` Umgebung
-* Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut. 
-  Alternativ kann man die entsprechenden Dateien auch mit dem Texteditor bearbeiten.
-* Komplexe Bibliografien mit ``biblatex``, ``biber`` und ``jabref``
-* Grafiken erstellen mit LaTeX-Paketen, Kurze Einführung ``TikZ``
+* Das Paket ``nicematrix``
+* Seitenränder einstellen und Kopf/Fußzeilen anpassen mit ``scrpage``
+* Mehr zum Bilder einbetten: ``subfigure`` und ``subcaption`` 
+* Mehr zu Referenzen
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
-* Liste wichtiger Pakete: https://ctan.mc1.root.project-creative.net/info/first-packages/first-packages.html
 * Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen
+* Einfache Bibliografien -- die ``thebibliography`` Umgebung
+* Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut. Alternativ kann man die entsprechenden Dateien auch mit dem Texteditor bearbeiten.
+* Komplexe Bibliografien mit ``biblatex``, ``biber`` und ``jabref``
+
+### Tag 4 - TikZ und Sonstiges
+
+* Grafiken erstellen mit LaTeX-Paketen, urze Einführung in ``TikZ``
 * Grundlagen der Satzautomatisierung von Textsatz mit Python (Ein Weg, Serienbriefe zu erzeugen...)
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
 * Editoren: ``TeXworks`` versus ``Visual Studio Code`` 
 * Frage-und-Antwort-Teil: was fehlt euch noch, was wolltet ihr schon immer mal TeXen?
+* Syntaxhighlighting mit pygments
+
 
 ## Literaturempfehlungen
 

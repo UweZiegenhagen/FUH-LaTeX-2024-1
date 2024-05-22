@@ -1,0 +1,27 @@
+%!TEX TS-program = Arara
+% arara: lualatex: {shell: yes}
+\documentclass[parskip=half,fontsize=12pt,ngerman]{scrartcl}
+ 
+\usepackage{babel}
+\usepackage{fontspec}
+\usepackage{blindtext}
+
+\usepackage{unicode-math}
+\setsansfont[ItalicFont={Cambria Italic},BoldFont={Cambria Bold},BoldItalicFont={Cambria Bold Italic}]{Cambria}
+\setmainfont[ItalicFont={Calibri Italic},BoldFont={Calibri Bold},BoldItalicFont={Calibri Bold Italic}]{Calibri}
+\setmonofont[ItalicFont={Consolas Italic},BoldFont={Consolas Bold},BoldItalicFont={Consolas Bold Italic}]{Consolas}
+\setmathfont{Cambria Math}
+
+\begin{document}
+
+\section{Einleitung}
+
+\blindtext[3]
+
+\[
+- \frac{p}{2} \pm \sqrt{ \left( \frac{p}{2}\right)^2 -q  }
+\]
+
+\texttt{Ich bin ein Satz im Mono Font}
+
+\end{document}

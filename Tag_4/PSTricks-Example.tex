@@ -1,0 +1,23 @@
+%!TEX TS-program = Arara
+% arara: lualatex: {shell: yes}
+\documentclass[border=5mm]{standalone}
+
+\usepackage{pstricks}
+\usepackage{pst-plot}
+\usepackage{auto-pst-pdf}
+         
+\begin{document}
+
+%Quelle: http://www.siart.de/typografie/pstricks_20030809.pdf
+\psset{xunit=1cm,yunit=1cm,runit=1cm}
+\begin{pspicture}(-0.5,-0.5)(4,2)
+\psgrid[subgriddiv=1,%
+griddots=10,%
+gridlabels=7pt](0,0)(4,2)
+\psline[linewidth=2pt]{-}%
+(0,0)(2,2)(4,0)
+\end{pspicture}
+
+
+\end{document}
+

@@ -1,0 +1,42 @@
+\documentclass[12pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+ 
+\usepackage{xcolor}
+\definecolor{colBack}{rgb}{1,1,0.8}
+ 
+\usepackage{minted}
+\setminted[python]{frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=colBack,fontsize=\footnotesize,linenos}
+\setminted[text]{frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=colBack,fontsize=\footnotesize,linenos}
+ 
+\usepackage{fancyvrb}
+\makeatletter
+\newenvironment{pycode}[1]%
+  {\xdef\d@tn@me{#1}\xdef\r@ncmd{python #1.pyy > #1.plog}%
+  \typeout{Writing file #1}\VerbatimOut{#1.pyy}% 
+  }
+  {\endVerbatimOut %
+ \toks0{\immediate\write18}%
+ \expandafter\toks\expandafter1\expandafter{\r@ncmd}%
+ \edef\d@r@ncmd{\the\toks0{\the\toks1}}\d@r@ncmd %
+ \noindent Input
+ \inputminted{python}{\d@tn@me.pyy}%
+ \noindent Output
+ \inputminted{text}{\d@tn@me.plog}%
+}
+\makeatother
+ 
+\begin{document}
+ 
+\begin{frame}[containsverbatim]
+\frametitle{Python Code Evaluation}
+ 
+\begin{pycode}{testcode}
+import pandas as pd
+print(pd.__version__);
+print(1+1+1);
+\end{pycode}
+ 
+\end{frame}
+ 
+\end{document}

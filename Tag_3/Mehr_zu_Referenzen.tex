@@ -1,0 +1,125 @@
+\documentclass[ngerman]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{xcolor}
+\usepackage{paralist}
+ 
+% sinnloser Text 
+\usepackage{blindtext}
+
+
+% for prettyref
+\usepackage{prettyref} 
+\newrefformat{eq}{\textup{(\ref{#1})}}
+\newrefformat{cha}{Kapitel \ref{#1}}
+\newrefformat{sec}{Abschnitt \ref{#1}}
+\newrefformat{tab}{Tabelle \ref{#1} auf Seite \pageref{#1}}
+\newrefformat{fig}{Zeichnung \ref{#1} auf der Seite \pageref{#1}}
+ 
+%\usepackage{showlabels} % oder 
+\usepackage{showkeys}
+
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,                     % show bookmarks bar
+    unicode=false,                      % non - Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                        % show Acrobat’s toolbar
+    pdfmenubar=true,                        % show Acrobat’s menu
+    pdffitwindow=false,                 % window fit to page when opened
+    pdfstartview={FitH},                    % fits the width of the page to the window
+    pdftitle={My title},                        % title
+    pdfauthor={Author},                 % author
+    pdfsubject={Subject},                   % subject of the document
+    pdfcreator={Creator},                   % creator of the document
+    pdfproducer={Producer},             % producer of the document
+    pdfkeywords={keyword1, key2, key3},   % list of keywords
+    pdfnewwindow=true,                  % links in new window
+    colorlinks=true,                        % false: boxed links; true: colored links
+    linkcolor=blue,                          % color of internal links
+    filecolor=blue,                     % color of file links
+    citecolor=blue,                     % color of file links
+    urlcolor=blue                        % color of external links
+}
+
+\usepackage[noabbrev]{cleveref} % must be loaded after hyperref
+%\crefname{figure}{Zeichnung}{Zeichnungen}
+% siehe auch https://tex.stackexchange.com/questions/79954/creating-a-new-type-of-cross-reference-and-referencing-them-spelling-the-same-te
+
+
+\begin{document}
+
+\label{aaa}
+
+\section{Erster Abschnitt}\label{sec:erst}
+ 
+\blindtext[3]
+ 
+\begin{figure}[h]%
+\rule{\columnwidth}{5cm}
+\caption{Hallo Welt!}%
+\label{fig:test1}%
+\end{figure}
+ 
+ 
+\begin{table}[h]%
+\rule{\columnwidth}{5cm}
+\caption{Hallo Welt!}%
+\label{dra:zeichnung1}%
+\end{table}
+ 
+ 
+\blindtext[1]
+ 
+\section{Zweiter Abschnitt}
+ 
+\blindtext[1]
+ 
+\begin{figure}[h]%
+\rule{\columnwidth}{5cm}
+\caption{Hallo Welt!}%
+\label{fig:test2}%
+\end{figure}
+ 
+\blindtext[1]\vspace*{1em}
+ 
+\begin{figure}%
+\rule{\columnwidth}{5cm}
+\caption{Hallo Welt!}%
+\label{fig:hier}%
+\end{figure}
+ 
+\begin{compactitem}
+	\item Ohne Paket: Siehe Abbildung \ref{fig:test1} auf Seite \pageref{fig:test1} \vspace*{1em}
+	\item Cleverref: Siehe \cref{fig:test1}
+	\item Cleverref: \namecref{sec:erst} 
+	\item Cleverref: \cpageref{fig:test1} 
+	\item Cleverref: \crefrange{fig:test1}{fig:test4}
+	\item Cleverref: \crefrange*{fig:test1}{fig:test2} % no hyperlink
+	\item Cleverref: \cpagerefrange{fig:test1}{fig:test4} 
+	\item Cleverref: \cref{dra:zeichnung1}\vspace*{1em}
+	\item Prettyref: \prettyref{fig:test1}
+	\item Prettyref: \prettyref{sec:erst}
+	
+\end{compactitem}
+
+
+ 
+\clearpage 
+ 
+\begin{figure}%
+\rule{\columnwidth}{5cm}
+\caption{Hallo Welt!}%
+\label{fig:test3}%
+\end{figure}
+ 
+\clearpage 
+ 
+\begin{figure}%
+\rule{\columnwidth}{5cm}
+\caption{Hallo Welt!}%
+\label{fig:test4}%
+\end{figure}
+ 
+\end{document}
+

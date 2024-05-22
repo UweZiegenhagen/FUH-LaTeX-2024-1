@@ -1,0 +1,44 @@
+\documentclass[a0paper,35pt,margin=2cm]{tikzposter} % See Section 3
+
+\usepackage{blindtext}
+
+\title{\bfseries Bose-Einstein-Kondensate und Schrödingers Katze} 
+\institute{Düsentrieb Institute of Unpractical Sciences} % See Section 4.1
+\author{\bfseries Prof. Dr. Daniel Düsentrieb} 
+%\titlegraphic{Logo}
+\usetheme{Wave} % See Section 5
+
+% Basic, Default, Rays, Basic,
+%Simple, Envelope, Wave, Board, Autumn, and Desert
+
+\begin{document}
+
+\maketitle % See Section 4.1
+
+\block{BlocktitleA}{Blocktext} % See Section 4.2
+
+\begin{columns} % See Section 4.4
+\column{0.3} % See Section 4.4
+\block{BlocktitleB}%
+{\blindtext
+
+\begin{tikzfigure}[Caption of the figure]
+\label{fig:fig1}
+\includegraphics[width=0.25\textwidth]{Katze}
+\end{tikzfigure}
+
+}
+\column{0.7}
+\block{BlocktitleC}{
+
+\huge\blindtext}
+
+
+\note{Notetext} % See Section 4.3
+\end{columns}
+
+\block{BlocktitleA}{\huge\blindtext} 
+
+
+
+\end{document}

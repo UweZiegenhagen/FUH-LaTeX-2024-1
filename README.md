@@ -83,6 +83,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Seitenränder einstellen und Kopf/Fußzeilen anpassen mit ``scrpage``
 * Mehr zum Bilder einbetten: ``subfigure`` und ``subcaption`` 
 * Mehr zu Referenzen
+* Lebensläufe erstellen mit LaTeX
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
 * Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen
 * Einfache Bibliografien -- die ``thebibliography`` Umgebung
@@ -91,6 +92,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 ### Tag 4 - TikZ und Sonstiges
 
+* git und github
 * Grafiken erstellen mit LaTeX-Paketen, urze Einführung in ``TikZ``
 * Grundlagen der Satzautomatisierung von Textsatz mit Python (Ein Weg, Serienbriefe zu erzeugen...)
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket

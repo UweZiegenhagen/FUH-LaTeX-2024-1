@@ -1,0 +1,18 @@
+\documentclass [border = .2cm] {standalone}
+ 
+% Required packages
+\usepackage{pgfplots}
+\usepackage{animate}
+\pgfplotsset{compat = newest}
+ 
+\begin{document}
+\begin{animateinline}[poster=last, controls, palindrome]{10}
+\multiframe{70}{Ry=1+1}{
+\begin{tikzpicture}
+\begin{axis}[axis lines=center,view={\Ry}{45},xmin=0,xmax=3,ymin=0,ymax=4,zmin=0,zmax=3,  xtick={0,...,3},ytick={0,...,3},ztick={0,...,4}]
+\addplot3[only marks]  file {uwe.csv};
+ 
+\end{axis}
+\end{tikzpicture}}
+\end{animateinline}
+ \end{document}

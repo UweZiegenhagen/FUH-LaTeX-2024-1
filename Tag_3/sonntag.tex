@@ -1,0 +1,15 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{ifthen}
+
+\begin{document}
+
+\newboolean{sonntag}
+\setboolean{sonntag}{true}
+
+\ifthenelse{\boolean{sonntag}}{Sonntag}{Samstag} ist mein Lieblingstag.
+
+
+\end{document}

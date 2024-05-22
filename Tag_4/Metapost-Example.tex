@@ -1,0 +1,35 @@
+%!TEX TS-program = Arara
+% arara: lualatex: {shell: yes}
+\documentclass[border=5mm]{standalone}
+\usepackage{luamplib}
+\usepackage{unicode-math}
+\setmathfont{TeX Gyre Termes Math}
+
+%https://tex.stackexchange.com/questions/674134/is-metapost-still-relevant-in-the-age-of-lua-etc
+\begin{document}
+\mplibtextextlabel{enable}
+\begin{mplibcode}
+input colorbrewer-rgb
+beginfig(1);
+    path C, vv, aa, oo;
+    C = fullcircle scaled 4cm;
+    linejoin := 0;
+    linecap := 0;
+    for t=0 upto 2:
+      p := 8/3t+2;
+      drawarrow subpath (p-4/3,p+4/3) of C withcolor Blues 8 7;
+      vv := (origin -- unitvector(direction p of C) scaled 2cm)            shifted point p of C;
+      aa := (origin -- unitvector(direction p of C) scaled 1cm rotated 90) shifted point p of C;
+      drawarrow vv withpen pencircle scaled 2 withcolor Greens 8 6;
+      drawarrow aa withpen pencircle scaled 2 withcolor Oranges 8 6;
+      label("$\vec{v}$", unitvector(direction 3/4 of vv) rotated -90 scaled 7 shifted point 3/4 of vv); 
+      label("$\vec{a}$", unitvector(direction 2/3 of aa) rotated +90 scaled 7 shifted point 2/3 of aa); 
+      fill fullcircle scaled 5 shifted point p of C;
+    endfor
+    oo = subpath(3.4,4.2) of C scaled 1.12;
+    drawarrow oo withpen pencircle scaled 4 withcolor Blues 8 3;
+    label.lft("$\omega$", point 2/3 of oo);
+endfig;
+\end{mplibcode}
+\end{document}
+

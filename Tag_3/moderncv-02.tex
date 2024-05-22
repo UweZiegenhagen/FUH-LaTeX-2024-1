@@ -1,0 +1,113 @@
+\documentclass[a4paper]{moderncv}
+
+\usepackage{blindtext}
+
+\moderncvtheme[blue]{casual} % classic
+
+\firstname{Donald}
+\familyname{Duck}
+\title{Dr.}
+\address{Entenweg 1}{12345 Entenhausen}
+\mobile{+490123456788}
+\phone{+490123456789}
+\fax{+490123456789}
+\email{donald@duck.com}
+\photo{miau}
+\extrainfo{www.donald.duck.com}
+
+\usepackage{ifthen}
+\newboolean{ausbildung}
+\setboolean{ausbildung}{true}
+
+\begin{document}
+
+\maketitle
+
+\section{Berufserfahrung}
+
+\cventry{2022/1--jetzt}{Mädchen für alle}{Dagobert Duck}
+{Entenhausen}{}
+{Immer da, wenn Onkel Dagobert mich braucht}
+
+\cventry{2019/1--2021/12}{Maat}{Bundesmarine}
+{Eckernhausen}{}
+{Küchenmaat}
+
+
+
+\ifthenelse{\boolean{ausbildung}}{%true Teil
+\cventry{2015-2018/12}{Ausbildung zum Dekorateur}{ALDI}
+{Essen}{Note: 2,0}
+{Dekoration der Gefriertruhen}
+}{% else Teil
+\cventry{2015-2018/12}{Ausbildung zum Dekorateur}{ALDI}
+{Essen}{}
+{Dekoration der Gefriertruhen}
+
+}
+
+
+
+
+
+
+\section{Sprachkenntnisse}
+
+\cvlanguage{Deutsch}{Muttersprache}{}
+
+\cvlanguage{Englisch}{C1}{}
+
+\section{Hobbies}
+
+\cvlistitem{Radfahren}
+\cvlistitem{Schwimmen}
+
+\cvline{Modellbau}{Flugzeugmodellbau}
+
+\section{EDV-Kenntnisse}
+
+\cvcomputer{Office}{Excel}{Grafik}{Photoshop}
+
+\end{document}
+
+\section{Ausbildung}
+
+\cventry{years}{degree/job title}{institution/employer}
+{localization}{optional: grade/...}
+{optional: comment/job description}
+
+\cvdoubleitem{subtitle}{Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können.}{subtitle}{Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können.}
+
+\section{Sprachkenntnisse}
+
+
+\cvlanguage{name}{level}{comment}
+
+\section{List Items}
+
+\cvlistitem{point 1}
+\cvlistitem{point 2}
+\cvlistitem{point 3}
+\cvlistitem{point 4}
+\cvlistitem{point 5}
+
+\cvlistdoubleitem{point1}{point2}
+\cvlistdoubleitem{point3}{point4}
+\cvlistdoubleitem{point5}{point6}
+\cvlistdoubleitem{point7}{point8}
+\cvlistdoubleitem{point9}{point10}
+
+\section{Interests}
+
+\cvline{hobby 1}{\small Description}
+\cvline{hobby 2}{\small Description}
+\cvline{hobby 3}{\small Description}
+
+\cvline{leftmark}{text}
+
+\section{EDV-Kenntnisse}
+
+\cvcomputer{category}{programs}{category}{programs}
+
+
+

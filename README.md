@@ -80,11 +80,12 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 * Zusammenfassung vom 2. Termin, Wiederholung
 * Das Paket ``nicematrix``
+* Flyer basteln mit ``leaflet``
+* Lebensläufe erstellen mit LaTeX
 * Seitenränder einstellen mit ``geometry``
 * Kopf/Fußzeilen anpassen mit ``scrpage``
 * Mehr zum Bilder einbetten: ``subcaption`` 
 * Mehr zu Referenzen
-* Lebensläufe erstellen mit LaTeX
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
 * Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen
 * Einfache Bibliografien -- die ``thebibliography`` Umgebung

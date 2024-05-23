@@ -3,8 +3,31 @@
 \usepackage{blindtext}
 \usepackage{microtype}
 \usepackage{graphicx}
-\usepackage[]{csquotes}
+\usepackage{csquotes}
+\usepackage{paralist}
 
+% texdoc lineno für die Doku
+% Option `modulo' für Zeilenzahl in jeder nx5. Zeile
+\usepackage[pagewise]{lineno}
+\linenumbers
+
+% Seitentitelei anpassen
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
+%\ohead[\headmark]{\headmark} %
+%\ofoot[\pagemark]{\pagemark\ von \pageref{LastPage}} % 
+\ihead[]{}
+\ifoot[]{}
+\chead[]{\headmark}
+\cfoot[]{}
+\ohead[]{\pagemark}
+\ofoot[\pagemark]{}
+
+\usepackage[standard,thmmarks]{ntheorem} % Theorem, Proof
+
+
+% als letztes Paket laden, außer man weiß was man tut
 \usepackage{hyperref}
 \hypersetup{
     bookmarks=true,                     % show bookmarks bar

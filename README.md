@@ -95,6 +95,8 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 ### Tag 4 - TikZ und Sonstiges
 
 * git und github
+* Einzelne Seiten drehen im PDF
+* Mehrere Schriftarten im Dokument
 * Grafiken erstellen mit LaTeX-Paketen, urze Einführung in ``TikZ``
 * Grundlagen der Satzautomatisierung von Textsatz mit Python (Ein Weg, Serienbriefe zu erzeugen...)
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket

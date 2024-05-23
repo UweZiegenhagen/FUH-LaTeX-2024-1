@@ -1,0 +1,40 @@
+% arara: lualatex: {shell: yes}
+\documentclass[11pt,ngerman]{scrartcl}
+\usepackage{xltxtra}
+\usepackage[]{xkeyval,babel}
+\usepackage[a4paper,top=2cm, bottom=2cm, left = 2.5cm, right=2cm]{geometry}
+\usepackage[]{titlesec}
+ 
+\usepackage{xcolor}
+\definecolor{msdarkblue}{RGB}{54,95,145}
+\definecolor{msblue}{RGB}{79,129,189}
+ 
+%\titleformat{\section}[form]{layout}{labellayout}{abstand}{davorcode}[danachcode]
+\titleformat{\section}[hang]{\color{msdarkblue}\Large\sffamily\bfseries}{}{0pt}{\vspace*{-6pt}}
+\titleformat{\subsection}[hang]{\color{msblue}\large\sffamily\bfseries}{}{0pt}{\vspace*{-4pt}}
+\titleformat{\subsubsection}[hang]{\color{msblue}\normalsize\sffamily\bfseries}{}{0pt}{}
+ 
+\setsansfont[ItalicFont={Cambria Italic},BoldFont={Cambria Bold},BoldItalicFont={Cambria Bold Italic}]{Cambria}
+\setmainfont[ItalicFont={Calibri Italic},BoldFont={Calibri Bold},BoldItalicFont={Calibri Bold Italic}]{Calibri}
+\setmonofont[ItalicFont={Consolas Italic},BoldFont={Consolas Bold},BoldItalicFont={Consolas Bold Italic}]{Consolas}
+ 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+ 
+\usepackage{unicode-math}
+\setmathfont{Cambria Math}
+\begin{document}
+ 
+\section{Überschrift 1. Ordnung}
+\subsection{Überschrift 2. Ordnung}
+\subsubsection{Überschrift 3. Ordnung}
+ 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque lobortis turpis, fringilla euismod nisi rutrum tempus. Etiam lorem sapien, aliquam sed tincidunt eget, congue vitae nisl. Ut quis metus vitae eros convallis fermentum eu quis nulla. Donec non iaculis enim. Nam commodo, justo quis aliquet ultrices, nisi est porttitor dui, sit amet scelerisque lacus lorem vitae nibh. Cras felis mi, venenatis a tincidunt non, tempor sit amet neque. Vivamus sodales purus neque, at semper ante. Aenean quis risus eros. Vestibulum convallis ligula erat, interdum tempus libero. Vivamus id libero non magna tincidunt sagittis vitae vitae neque. Proin blandit magna at dui porta lobortis. 
+ 
+\texttt{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque lobortis turpis, fringilla euismod nisi rutrum tempus. Etiam lorem sapien, aliquam sed tincidunt eget, congue vitae nisl. Ut quis metus vitae eros convallis fermentum eu quis nulla. Donec non iaculis enim.}
+ 
+\begin{equation}
+(x+a)^n = \sum_{k=0}^n \left(n\atop k \right) x^k a^{n-k}
+\end{equation} 
+ 
+\end{document}

@@ -1,0 +1,150 @@
+%!TEX TS-program = Arara
+% arara: pdflatex
+
+\documentclass[helvetica,german,11pt]{europecv}
+
+% https://github.com/latex3/latex2e/issues/833
+\usepackage{hyperref}
+\makeatletter % make the "@" character a normal character
+\def\HyPsd@expand@utfvii{}
+\makeatother % make the "@" character an "other" character
+
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{ifthen}
+\usepackage{eso-pic}
+
+\usepackage[sfdefault]{plex-sans}
+\usepackage{microtype}
+
+%\usepackage[utf8]{inputenc}
+
+%\usepackage{plex-otf} %
+%%\renewcommand*\familydefault{\sfdefault} %% Only if th
+
+\usepackage{csquotes}
+\usepackage[a4paper,top=1.5cm,left=1cm,right=1.4cm,bottom=2.0cm]{geometry}
+
+\newcommand{\until}{\,--\,}
+
+\newboolean{grades}
+\setboolean{grades}{true} % boolvar=true or false
+% \ifthenelse{\boolean{grades}}{true}{false}
+
+\newboolean{drive}
+\setboolean{drive}{false} % boolvar=true or false
+
+\newboolean{conferences}
+\setboolean{conferences}{true} % boolvar=true or false
+
+\newboolean{driving}
+\setboolean{driving}{true} % boolvar=true or false
+
+\newboolean{privat}
+\setboolean{privat}{true} % boolvar=true or false
+
+
+\ecvLeftColumnWidth{5.7cm}
+
+% Define personal data
+
+\ecvname{Donald Duck}
+
+\ecvaddress{\ifthenelse{\boolean{privat}}{Entenweg 1, 12345\,Entenhausen, Entland}{Entenhausen, Entland}}
+\ecvtelephone{\ifthenelse{\boolean{privat}}{+49\,(0)\,123\,456\,7890}{---}}
+\ecvemail{     
+\ifthenelse{\boolean{privat}}
+{\url{donald@duck.com}}
+{email form at \url{http://www.donaldduck.ent}
+}}
+\ecvnationality{Ente}
+\ecvdateofbirth{\ifthenelse{\boolean{privat}}{02.09.1950 in Entenhausen, Entland}{1950}}
+\ifthenelse{\boolean{privat}}{
+\AddToShipoutPicture*{\put(400,700){\includegraphics[height=3.5cm]{miau}}}
+}
+{
+\AddToShipoutPicture*{\put(400,700){\includegraphics[height=2.5cm]{miau}}}
+}
+
+\begin{document}
+\begin{europecv}
+\ecvpersonalinfo
+
+\ecvsection{Work experience}
+
+
+\ecvitem*{Dates (from--to)}{\textbf{1/2020\until present}}
+\ecvitem*{Name of employer}{Duck Enterprises}
+\ecvitem*{Type of business or sector}{Banking}
+\ecvitem*{Main activities and responsibilities}{CED}
+
+\ecvitem{}{}
+
+
+\ecvitem*{Dates (from--to)}{\textbf{1/2020\until present}}
+\ecvitem*{Name of employer}{Duck Enterprises}
+\ecvitem*{Type of business or sector}{Banking}
+\ecvitem*{Main activities and responsibilities}{CED}
+
+
+\ecvsection{Education and training}
+
+\ecvitem*{Dates (from--to)}{\textbf{10/2003\until04/2009}}
+\ecvitem*{Place}{Humboldt-Universität zu Berlin} % Name and type of organization providing education and training
+\ecvitem*{Principal subject}{Master Thesis supervised by Daniel Düsentrieb}
+\ifthenelse{\boolean{grades}}{\ecvitem*[10pt]{Final grade}{1,0}}{\ecvitem{}{}}
+
+
+\ecvsection{Further Education}
+\ecvitem{}{\textsl{ENT Level 1}, passed December 2017}
+\ecvitem{}{\textsl{Foundation Certificate in IT Service Management ITIL v3} by TÜV Süd, Cologne, 2010}
+\ecvitem{}{\textsl{Business Analyst Foundation} by IIL, Frankfurt/Main, 2011} 
+\ecvitem{}{\textsl{Foundation Certificate in IT Service Management ITIL v2} by TÜV Süd, Cologne, 11.12.2008--12.12.2008}
+\ecvitem{}{\textsl{Projektleiter Baustein A/IT} at Integrata, Cologne, 2008} 
+\ecvsection{Personal skills and competences}
+
+\ecvitem[10pt]{\large\textsc{Mother tongue}}{\textbf{German}}
+
+%\clearpage Seitenumbruch
+
+\ecvitem{\large\textsc{Other languages}}{}
+
+\ecvitem{}{\textbf{English}}
+\ecvitem*{Reading Skills}{Excellent}
+\ecvitem*{Writing skills}{Excellent}
+\ecvitem*{Verbal skills}{Excellent}
+
+\ecvitem[10pt]{}{TELC C1 result 97,88\%}
+\ecvitem[10pt]{}{Basic skills in Doggish and Cattish}
+
+\ecvitem{\large\textsc{Technical skills and competences}}{Skilled in various programming languages such as \TeX/\LaTeX, VBA, Powershell, Python/pandas, R, Pentaho}
+
+\ifthenelse{\boolean{drive}}{\ecvitem{\large\textsc{Driving licence(s)}}{B, BE, C1, C1E and M}}{\ecvitem{}{}}
+
+\ecvsection{Additional information}
+
+\ifthenelse{\boolean{conferences}}{
+\ecvitem{Attended Conferences}{2000: Compstat Conference in Utrecht, Netherlands}
+\ecvitem{}{2002: Compstat Conference in Berlin, Germany (Co-Organizer)}
+\ecvitem{}{2004: Interface Conference in Baltimore, USA}
+\ecvitem{}{2005: ISI Conference in Sydney, Australia}
+\ecvitem{}{2005: ISBIS Conference in Cairns, Australia}
+\ecvitem{}{2006: Compstat Conference in Rome, Italy}
+\ecvitem{}{2007: Statistical Computing in Reisensburg, Germany}
+\ecvitem{}{2007: Statistische Woche in Kiel, Germany}
+\ecvitem{}{2007: ISI Conference in Lisbon, Portugal}
+\ecvitem{}{2008: ISBIS Conference in Prague, Czech Republic}
+\ecvitem{}{2010: \TeX{} User Group Meeting in San Francisco, USA}
+\ecvitem{}{2018: 6th International IBM Cloud Academy Conference, Tokyo, Japan}}
+
+\ecvitem{\large\textsc Teaching Experience}{}
+\ecvitem{undergraduate level}{Statistics, Web Programming}
+\ecvitem{graduate level}{Introduction to the XploRe statistical language, \newline Introduction to R, Multivariate Statistics, Data Mining}
+\ecvitem{post graduate level}{Search Engine Technology, Statistical Trapdoors, \LaTeX}
+\ecvitem{}{}
+\ecvitem{\large\textsc Personal interests}{Sports, \LaTeX~Typesetting, Travelling, Digital Photography}
+
+\end{europecv}
+\end{document}
+
+

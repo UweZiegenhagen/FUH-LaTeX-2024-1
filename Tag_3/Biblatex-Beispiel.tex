@@ -13,14 +13,52 @@
 
 \addbibresource{Literatur.bib}
 
-
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,                     % show bookmarks bar
+    unicode=false,                      % non - Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                        % show Acrobat’s toolbar
+    pdfmenubar=true,                        % show Acrobat’s menu
+    pdffitwindow=false,                 % window fit to page when opened
+    pdfstartview={FitH},                    % fits the width of the page to the window
+    pdftitle={My title},                        % title
+    pdfauthor={Author},                 % author
+    pdfsubject={Subject},                   % subject of the document
+    pdfcreator={Creator},                   % creator of the document
+    pdfproducer={Producer},             % producer of the document
+    pdfkeywords={keyword1, key2, key3},   % list of keywords
+    pdfnewwindow=true,                  % links in new window
+    colorlinks=true,                        % false: boxed links; true: colored links
+    linkcolor=blue,                          % color of internal links
+    filecolor=blue,                     % color of file links
+    citecolor=blue,                     % color of file links
+    urlcolor=blue                        % color of external links
+}
 \begin{document}
 
 \blindtext
 
 \cite{Duck2000}
 
-\printbibliography 
+Was ich auch immer sein mag, es ist doch nur ein wenig Fleisch, ein schwacher Lebenshauch und die leitende Vernunft. Laß die Bücher,Antonin war durch seine Regentenpflichten so sehr beschäftigt, daß er seine Neigung zum Lesen unterdrücken mußte. (Bücher konnten damals nur die Reichen kaufen, die philosophischen Schriften wurden oft mit mehreren Talenten, d. h. mehreren Tausend Talern bezahlt.) die Zerstreuung, es fehlt dir die Zeit. Betrachte dich als einen, der im Begriff ist zu sterben, verachte dieses Fleisch: Blut, Knochen, ein zerbrechliches Gewebe, aus Nerven, Puls- und Blutadern zusammengeflochten. Betrachte diesen Lebenshauch selbst; was ist er? Nur Wind, und nicht einmal immer derselbe, sondern jeden Augenblick ausgeatmet und wieder eingeatmet. Das Dritte ist die gebietende Vernunft. Auf folgendes mußt du bedacht sein: Du bist alt; gib nicht mehr zu, daß sie eine Sklavin sei, daß sie durch einen wilden Trieb dahingerissen werde oder gegen das jetzige Geschick murre oder durch das künftige erschüttert werde.\footnote{\blindtext}
+
+A \cite{Chen2018}
+
+\clearpage
+
+B \parencite{Chen2018}
+
+C \blindtext\footcite{Chen2018} 
+
+D \footcite{Duck2000}
+
+E \blindtext\footcite{Chen2018}
+
+F \citeauthor{Knuth1984} hat in seinem Werk  \citetitle{Knuth1984}, das er im Jahr  \citeyear{Knuth1984} veröffentlicht hat, wichtige Aussagen getroffen.
+
+\printbibliography[title={Artikel},type=article]
+
+\printbibliography[title={Bücher},type=book]
 
 
 \end{document}

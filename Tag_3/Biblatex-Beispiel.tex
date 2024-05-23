@@ -1,0 +1,26 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: biber
+% arara: pdflatex: {shell: yes}
+
+\documentclass[12pt,ngerman,parskip=half]{scrartcl}
+
+\usepackage{babel}
+\usepackage{blindtext}
+
+\usepackage[style=authortitle-icomp,backend=biber]{biblatex}
+\usepackage[babel,german=quotes]{csquotes}
+
+\addbibresource{Literatur.bib}
+
+
+\begin{document}
+
+\blindtext
+
+\cite{Duck2000}
+
+\printbibliography 
+
+
+\end{document}

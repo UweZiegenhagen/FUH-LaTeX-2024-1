@@ -1,7 +1,7 @@
 %!TEX TS-program = Arara
 % arara: pdflatex: {shell: yes}
 % arara: pdflatex: {shell: yes}
-\documentclass[12pt,ngerman]{scrartcl}
+\documentclass[12pt,ngerman,parskip=half]{scrartcl}
 
 \usepackage{babel}
 \usepackage{blindtext}
@@ -31,12 +31,16 @@
 
 \blindtext
 
-\cite{knuth}
+Donald Knuth hat in \cite{knuth}  beschrieben, was  ein cooles Programm können muss.
 
 \blindtext
 
 \begin{thebibliography}{9}
 \bibitem{knuth} Donald E. Knuth, The \TeX\ Book, 2nd edition, Addison-Wesley, 1984
+
+\bibitem{einstein} Albert Einstein, \textbf{Anmerkungen zur Allgemeinen Relativitätstheorie}, Springer, 1905
+
+\bibitem{Duck} Donald Duck, \textit{Briefe an Onkel Dagobert}, Reclam, 2010
 
 \end{thebibliography}
 

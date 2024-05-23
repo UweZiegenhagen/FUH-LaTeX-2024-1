@@ -1,0 +1,31 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[11pt,german,helvetica]{europecv}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\makeatletter
+\def\HyPsd@expand@utfvii{}
+\makeatother
+
+\newcommand{\until}{\,--\,}
+
+\ecvname{Donald Duck}
+\ecvaddress{rewfsf}
+\ecvemail{sfsdf}
+\ecvnationality{Ente}
+\ecvdateofbirth{23.05.2024}
+\begin{document}
+\begin{europecv}
+\ecvpersonalinfo
+
+\ecvsection{Work experience}
+
+\ecvitem*{Dates (from--to)}{\textbf{1/2020\until present}}
+\ecvitem*{Name of employer}{Duck Enterprises}
+\ecvitem*{Type of business or sector}{Banking}
+\ecvitem*{Main activities and responsibilities}{CED}
+
+
+\end{europecv}
+\end{document}

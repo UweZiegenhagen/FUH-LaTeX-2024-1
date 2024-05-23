@@ -1,0 +1,49 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman,parskip=half]{scrreport}
+
+\input{preamble}
+
+% Wenn nur ein Kapitel übersetzt werden soll, die Nummerierung aber
+% richtig sein muss/soll
+% es können auch mittels Komma mehrere Dateien angegeben werden 
+%\includeonly{03-Fazit} 
+
+\begin{document}
+
+\begin{titlepage}
+\textbf{\large Fernuniversität Hagen \\
+Lehrstuhl für Angewandte Software-Entwicklung \\
+Prof. Dr. Daniel Düsentrieb}\vspace*{4cm}
+
+\begin{center}
+\textbf{\huge \enquote{Software für Raketenantriebssysteme}}
+\end{center}\vspace*{2cm}
+
+
+\begin{center}
+\textbf{\Large Abschlussarbeit zur \\
+Erlangung des Bachelor-Grades}
+\end{center}
+
+\vfill
+Donald Duck, Matrikelnummer 123456 \\
+Köln, den \today
+\end{titlepage}
+
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\include{01-Einleitung}
+
+\include{02-Analyse}
+
+\include{03-Fazit}
+
+
+\end{document}

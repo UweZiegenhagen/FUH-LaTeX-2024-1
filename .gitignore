@@ -12,3 +12,5 @@
 *.bcf
 *.bbl
 *.sav
+*.pygtex
+*.pygstyle

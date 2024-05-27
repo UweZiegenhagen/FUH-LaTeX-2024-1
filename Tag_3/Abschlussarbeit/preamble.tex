@@ -23,17 +23,19 @@
 \linenumbers
 
 % Seitentitelei anpassen
-\usepackage{scrlayer-scrpage}
+\usepackage[automark]{scrlayer-scrpage}
 \pagestyle{scrheadings}
+
 
 %\ohead[\headmark]{\headmark} %
 %\ofoot[\pagemark]{\pagemark\ von \pageref{LastPage}} % 
-\ihead[]{}
+\ihead[]{\headmark}
 \ifoot[]{}
-\chead[]{\headmark}
+\chead[]{}
 \cfoot[]{}
 \ohead[]{\pagemark}
 \ofoot[\pagemark]{}
+
 
 \usepackage[standard,thmmarks]{ntheorem} % Theorem, Proof
 

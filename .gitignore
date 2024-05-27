@@ -17,3 +17,8 @@
 *.synctex(busy)
 *.plog
 *.pyy
+*.pytxcode
+*.stdout
+*.pytxmcr
+*.pytxpyg
+*.pkl

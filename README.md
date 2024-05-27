@@ -96,14 +96,14 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 * git und github
 * Einzelne Seiten drehen im PDF mit dem ``pdflscape`` Paket
+* Kopf/Fußzeilen anpassen mit ``scrpage``
 * Mehrere Schriftarten im Dokument
-* Grafiken erstellen mit LaTeX-Paketen, urze Einführung in ``TikZ``
+* Syntaxhighlighting mit pygments
+* Grafiken erstellen mit LaTeX-Paketen, kurze Einführung in ``TikZ``
 * Grundlagen der Satzautomatisierung von Textsatz mit Python (Ein Weg, Serienbriefe zu erzeugen...)
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
 * Editoren: ``TeXworks`` versus ``Visual Studio Code`` 
 * Frage-und-Antwort-Teil: was fehlt euch noch, was wolltet ihr schon immer mal TeXen?
-* Syntaxhighlighting mit pygments
-
 
 ## Literaturempfehlungen
 

@@ -96,7 +96,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 * git und github
 * Einzelne Seiten drehen im PDF mit dem ``pdflscape`` Paket
-* Kopf/Fußzeilen anpassen mit ``scrpage``
+* Kopf/Fußzeilen anpassen mit ``scrpage`` => Option ``automark`` hat gefehlt
 * Mehrere Schriftarten im Dokument
 * Syntaxhighlighting mit pygments
 * Grafiken erstellen mit LaTeX-Paketen, kurze Einführung in ``TikZ``

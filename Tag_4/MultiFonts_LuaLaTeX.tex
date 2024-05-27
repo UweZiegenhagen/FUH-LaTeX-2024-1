@@ -1,0 +1,24 @@
+%!TEX TS-program = LuaLaTeX
+\documentclass[12pt]{scrartcl}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+
+\newfontfamily\calibrifont{Calibri}
+\newfontfamily\cambriafont{Cambria}
+\newfontfamily\georgiafont{Georgia}
+
+\newenvironment{calibri}{\calibrifont}{\par}
+\newenvironment{cambria}{\cambriafont}{\par}
+\newenvironment{georgia}{\georgiafont}{\par}
+
+\begin{document}
+\begin{calibri}
+This text is in Calibri
+\end{calibri}
+\begin{cambria}
+This text is in Cambria
+\end{cambria}
+\begin{georgia}
+This text is in Georgia
+\end{georgia}
+\end{document}

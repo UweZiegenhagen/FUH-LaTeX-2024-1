@@ -94,6 +94,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 ### Tag 4 - TikZ und Sonstiges
 
+* Fragen zum letzten Mal?
 * git und github
 * Einzelne Seiten drehen im PDF mit dem ``pdflscape`` Paket
 * Kopf/Fußzeilen anpassen mit ``scrpage`` => Option ``automark`` hat gefehlt

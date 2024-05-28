@@ -22,3 +22,5 @@
 *.pytxmcr
 *.pytxpyg
 *.pkl
+*.lot
+*.thm

@@ -1,0 +1,63 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: biber
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman,parskip=half]{scrreport}
+
+\input{preamble}
+% Wenn nur ein Kapitel übersetzt werden soll, die Nummerierung aber
+% richtig sein muss/soll
+% es können auch mittels Komma mehrere Dateien angegeben werden 
+\includeonly{03-Fazit} 
+
+\begin{document}
+
+\begin{titlepage}
+\textbf{\large Fernuniversität Hagen \\
+Lehrstuhl für Angewandte Software-Entwicklung \\
+Prof. Dr. Daniel Düsentrieb}\vspace*{4cm}
+
+\begin{center}
+\textbf{\huge \enquote{Software für Raketenantriebssysteme}}
+\end{center}\vspace*{2cm}
+
+
+\begin{center}
+\textbf{\Large Abschlussarbeit zur \\
+Erlangung des Bachelor-Grades}
+\end{center}
+
+\vfill
+Donald Duck, Matrikelnummer 123456 \\
+Köln, den \today
+\end{titlepage}
+
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\include{01-Einleitung}
+
+\include{02-Analyse}
+
+\include{03-Fazit}
+
+
+Wie Professor Knuth in \cite{Duck2023} beschrieben hat -- und was von \cite{Knuth1984} bestätigt wurde.
+
+\cite{Cao2021}
+
+\parencite{Knuth1984}
+
+Hallo ich werde eine Fußnote\footcite{Knuth1984}
+
+\citeauthor{Knuth1984} hat in seinem im Jahr \citeyear{Knuth1984} erschienen Buch \citetitle{Knuth1984} beschrieben, wie toll \TeX\ ist.
+
+%\nocite{*} wenn alle Einträge ausgegeben werden sollen
+\printbibliography % alle Einträge, die zitiert werden
+
+
+\end{document}

@@ -27,10 +27,19 @@
  \vspace*{1cm} 
 \begin{center}
 \begin{tikzpicture}
-
+[x=43mm,y=43mm,
+mycircle/.style={circle,minimum width=40mm},
+blackstyle/.style={mycircle,align=center,draw=black,thick,font=\bfseries\Huge},
+redstyle/.style={mycircle,align=center,draw=red,thick,font=\bfseries\Huge}
+]
     
-\node at (0,0) [month] {\scalebox{5}{1}};
+\node (a) at (0,0) [redstyle] {1};
+\node (b) at (1,0) [blackstyle] {2};
+\node (c) at (2,-2) [blackstyle] {3};
 
+\draw (a) -- (b);
+
+ \draw [->,thick](0,0) .. controls (1,-1) and (2,-1) .. (c);
 
 
 \end{tikzpicture}
@@ -38,7 +47,7 @@
  
 \end{document}
 
-\node at (1,0) [month] {\scalebox{5}{2}};
+
 \node at (2,0) [month] {\scalebox{5}{3}};
 \node at (3,0) [month] {\scalebox{5}{4}};
 
@@ -67,7 +76,4 @@
 \node at (2,-5.2) [month] {\scalebox{5}{23}};
 \node at (3,-5.2) [month] {\scalebox{5}{24}};
 
-[
-    x=43mm,y=43mm,
-    mybox/.style={circle,minimum width=40mm, minimum height=6mm},
-	month/.style={mybox,align=center,draw=black,thick,font=\bfseries\Huge}]
+
